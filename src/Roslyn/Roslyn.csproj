@@ -3,7 +3,7 @@
   <Import Project="..\..\build\Targets\VSL.Settings.targets" />
   <PropertyGroup>
     <AssemblyName>Roslyn</AssemblyName>
-    <ProjectGuid>{50256dc2-d42d-4bc0-a46c-cc85226f9b50}</ProjectGuid>
+    <ProjectGuid>{50256DC2-D42D-4BC0-A46C-CC85226F9B50}</ProjectGuid>
     <RootNamespace>Roslyn</RootNamespace>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <OutputType>Exe</OutputType>
@@ -19,7 +19,10 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Options.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Runner.cs" />
+    <Compile Include="VsixUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualStudio.ExtensionEngine">
